@@ -1,0 +1,51 @@
+html, ul, figure {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+ul { /** hacemos que la lista no tenga las viñetas y se posicione una al lado del otro**/ 
+    list-style: none;
+    display: flex
+
+}
+
+/**hago que cada elemento de la lista tenga un acnho determinado**/
+ul li {
+    width: 48%;
+}
+
+/**le digo que tenga un padding de 5px de todos lados**/
+ul li figure {
+    padding: 5px;
+    position: relative;
+}
+
+/**aca hacemos que que el efecto del hover se haga cuando paso el mouse
+arriba de la etiqueta figure**/
+ul li figure:hover figcaption {
+    display: block;
+}
+
+/**aca le digo al figcaption que va a tomar el tamaño absoluto del elemento
+padre, en este caso, el elemento padre es <ul li figure> ademas
+alineamos el texto en el centro, escogemos el tamaño de la fuente en 
+20px, con un interlineado de 30px y la fuente Verdana**/
+ul li figcaption {
+    display: none;
+    position:absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, .8);
+    text-align: center;
+    padding: 15px;
+    font: 20px/30px Verdana;
+    color: white;
+}
+/**hacemos que las imagenes se adapten 100% al contenedor**/
+img {
+    width: 100%;
+}
+
